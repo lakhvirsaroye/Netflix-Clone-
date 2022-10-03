@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&family=Noto+Sans&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Martel Sans', sans-serif; */
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#home{
+    /* height: 103vh; */
+    background-image: url("/img/home-back.jpg");
+    background-color: rgba(0, 0, 0, 0.733);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: soft-light;
+}
+
+
+/* NAVBAR */
+nav{
+    display: flex;
+    padding: 29px 52px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.logo img{
+    z-index: 5;
+    cursor: pointer;
+    height: 3.43rem;
+}
+
+.nav-right{
+    display: flex;
+}
+
+
+/* nav - right side english (select language) btn  */
+.select-language{
+    position: relative;
+    padding: 8px 21px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.select-language:active{
+    transform: scale(1.03);
+}
+
+.select-language h2{
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 350;
+    line-height: 18.2px;
+}
+
+.earth{
+    display: flex;
+    position: absolute;
+    left: 6%;
+    top: 35%;
+    height: 0.8rem;
+    filter: invert(100%)
+}
+
+.tringle{
+    display: flex;
+    height: 0.65rem;
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    filter: invert(100%)   
+}
+
+/* right side sign in btn */
+.sign-in-btn{
+    margin-left: 30px;
+    padding: 7px 18px;
+    border: none;
+    color: white;
+    font-size: .98rem;
+    border-radius: 3px;
+    font-weight: 550;
+    background-color: #E50914;
+}
+
+
+/* home center content  */
+.home-center{
+    height: 88vh;
+    color: white;
+    padding: 75px 0;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+/* 
+.home-center-content{
+    width: 100vw;
+} */
+
+.home-center-content h1{
+    max-width: 700px;
+    line-height: 70px;
+    font-size: 3.9rem;
+    font-weight: 650;
+    margin: 0 75px;
+}
+
+.home-center-content h2{
+    margin: 16px 75px;
+    font-size: 1.65rem;
+    font-weight: normal;
+}
+
+
+.home-center-inputs h3{
+    font-weight: 150;
+    padding: 14px;
+    font-size: 1.15rem;
+}
+
+.email input{
+    height: 70px;
+    width: 500px;
+    padding: 10px 0;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 550;
+}
+
+.email input:active{
+    border: 1px solid #0071eb;
+}
+
+.email input :placeholder-shown{
+    color: #000;
+}
+
+.email button{
+    border: none;
+    height: 70px;
+    width: 250px;
+    margin-left: -5px;
+    background-color: #E50914;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    font-size: 1.9rem;
+
+    /* position: absolute; */
+}
+
+
+button a{
+    color: white;
+    text-decoration: none;
+}
