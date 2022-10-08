@@ -23,7 +23,7 @@
 /* NAVBAR */
 nav{
     display: flex;
-    padding: 29px 52px;
+    padding: 26px 52px;
     align-items: flex-start;
     justify-content: space-between;
 }
@@ -42,7 +42,7 @@ nav{
 /* nav - right side english (select language) btn  */
 .select-language{
     position: relative;
-    padding: 8px 21px;
+    padding: 8px 20px;
     cursor: pointer;
     border-radius: 3px;
     background-color: black;
@@ -95,7 +95,7 @@ nav{
 .home-center{
     height: 88vh;
     color: white;
-    padding: 75px 0;
+    padding: 50px 0;
     flex-direction: column;
     display: flex;
     text-align: center;
@@ -128,38 +128,158 @@ nav{
     font-size: 1.15rem;
 }
 
+.email{
+    display: flex;
+    justify-content: center;
+}
+
 .email input{
     height: 70px;
     width: 500px;
-    padding: 10px 0;
+    padding: 10px 10px;
     outline: none;
+    border: 1px solid #8C8C8C;
     font-size: 1rem;
     font-weight: 550;
+    border-right: 1.6px solid #333333;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
 }
 
-.email input:active{
+.email input:focus{
     border: 1px solid #0071eb;
-}
-
-.email input :placeholder-shown{
-    color: #000;
 }
 
 .email button{
     border: none;
     height: 70px;
     width: 250px;
-    margin-left: -5px;
+    border-left: #333333;
     background-color: #E50914;
+    background-image: linear-gradient(180deg,#e50914,#db0510);
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     font-size: 1.9rem;
 
     /* position: absolute; */
 }
-
-
 button a{
     color: white;
     text-decoration: none;
+}
+
+.next-arrow{
+    height: 20px;
+}
+
+.email button:active{
+    width: 252px;
+    border: 2px solid #d98a8e;
+}
+
+
+
+.section-end{
+    width: 100%;
+    border-bottom: 8px solid #222222;
+}
+
+
+
+
+#watch-on-tv{
+    color: white;
+    padding: 25px 0;
+    background-color: black;
+}
+
+.watch-on-tv-card{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    
+}
+
+.left-right-text{
+    max-width: 547px;
+}
+
+.left-right-text h1{
+    font-size: 3.2rem;
+    line-height: 65px;
+    padding-bottom: 25px;
+}
+
+.left-right-text h2{
+    max-width: 600px;
+    font-weight: 550;
+    font-size: 1.4rem;
+}
+
+.right-video-img video{
+    height: 450px;
+}
+
+
+
+
+
+
+
+
+/* stranger-things section  */
+#download-your-shows{
+    color: white;
+    background-color: black;
+}
+
+.download-your-show-card{
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+    justify-content: space-evenly;
+}
+
+.stranger-things{
+    width: 504px;
+    position: relative;
+}
+
+.stranger-things-mobile img{
+    width: 500px;
+}
+
+.stranger-things-card{
+    padding: 8px 12px;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    border: 2px solid #333333;
+
+    position: absolute;
+    left: 17%;
+    bottom: 30px;
+}
+
+.stranger-things-poster img{
+    height: 80px;
+    padding-right: 10px;
+}
+
+.text-0{
+    font-size: 1rem;
+}
+
+.text-1{
+    font-size: .8rem;
+    color: #0071eb;
+}
+
+.stranger-things-downloading img{
+    height: 50px;
+    display: block;
+    padding-left: 60px;
 }
